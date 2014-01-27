@@ -1,18 +1,31 @@
-### Install Node.js
+# How to set up Gulp with an ExpressionEngine project
+
+I freaking love working with technologies like Grunt and Gulp, and wanted to share how to get my current EE front-end workflow set up. With a few tweaks, this can also be used with virtually any other sites (I've used it with Laravel, static sites, Craft, etc).
+
+## Install Node.js
 
 * If Node is not yet installed on the machine, it will need to be [installed](http://nodejs.org/download/)
 
 
-### Install Gulp
+## Install Gulp (if needed)
 
 * If Gulp has never been set up on the machine, the gulp CLI will also need to be installed by running `npm install gulp -g`
-* To install Gulp for the project (this only needs to happen once), switch to the root directory for the site in a terminal. For my configuration, you can install gulp and the dependencies using the command `npm install gulp-compass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-rename gulp-livereload tiny-lr gulp-cache --save-dev`. Again, you only need to do this once.
-* Make sure and copy the gulp.js file to the base of your site. The provided gulp.js file is set up for the following file configuration
 
-### Project Directory Structure
+### Install Gulp for the project (if needed)
+
+If a package.json file already exists with list of all of the dependencies that Gulp will need for the project, then you can simply switch to the project root directory in the site terminal and run the command `npm install`. This only needs to happen once so that the dependencies can be downloaded for the project.
+
+If a package.json file does not exist, switch to the project root directory for the site in a terminal. For this configuration, you can install gulp and the needed dependencies using the command `npm install gulp-compass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-rename gulp-livereload tiny-lr gulp-cache --save-dev`. You only need to do this once so that the dependencies can be downloaded for the project.
+
+
+## Add the gulp.js file
+
+Copy the gulp.js file (below) to the base of your site. The provided gulp.js file is set up to work with the following project directory structure.
+
+
+## Project Directory Structure
 
 * project root/
-  * config/ ([Master Config](https://github.com/focuslabllc/ee-master-config) files)
   * html/ (web root)
     * css/
     * js/
@@ -31,7 +44,7 @@
   * package.json (will be added when gulp is installed via CLI)
 
 
-### Run Gulp
+## Run Gulp
 
-* To just compile the scripts and SCSS one time, simply run the command `gulp`. You can also run any of the other task names, like `gulp styles`.
-* To watch the templates, .scss, and .js files for changes, and to automatically compile and minify the relevant files, run the command `gulp live`. If the livereload browser extensions are installed and enabled, the browser will automatically refresh when any changes are made.
+* To just compile the scripts and SCSS one time, simply run the default command `gulp`. You can also run any of the other task names, like `gulp styles`.
+* To watch the templates, .scss, and .js files for changes, and to automatically compile and minify the relevant files, run the command `gulp live`. If the livereload browser extensions are installed and enabled, the browser will automatically refresh when any changes are made to style and javascript files in the *src* directory, or to any template files in the *templates* directory.
