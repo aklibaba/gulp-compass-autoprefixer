@@ -13,17 +13,17 @@
 
 config ([Master Config](https://github.com/focuslabllc/ee-master-config) files)
 html (web root)
-=css
-=js
-=images
++css
++js
++images
 src
-=js
-==plugins.js
-==site.js
-==[various .js files]
-=scss
-==[various .scss files]
-==styles.scss
++js
+++plugins.js
+++site.js
+++[various .js files]
++scss
+++[various .scss files]
+++styles.scss
 system (EE system folder)
 templates (EE templates)
 gulpfile.js
