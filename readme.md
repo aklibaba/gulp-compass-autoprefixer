@@ -9,8 +9,8 @@
 * To install Gulp for the project (this only needs to happen once), switch to the root directory for the site in a terminal. For my configuration, you can install gulp and the dependencies using the command `npm install gulp-compass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-rename gulp-livereload tiny-lr gulp-cache --save-dev`. Again, you only need to do this once.
 * Make sure and copy the gulp.js file to the base of your site. The provided gulp.js file is set up for the following file configuration
 
-+base
-++config
+-base
+--config
 
 ++html (web root)
 +++css
