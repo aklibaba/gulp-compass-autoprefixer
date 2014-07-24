@@ -45,7 +45,17 @@ Copy the gulp.js file (below) to the base of your site. The provided gulp.js fil
   * (gulp.png)[https://dl.dropboxusercontent.com/u/12922578/gulp.png]
 
 
+## Start Growl
+
+Make sure Growl is running, as notification will appear in it whenever the browser is livereloaded or whenever there is an error.
+
+
 ## Run Gulp
 
 * To just compile the scripts and SCSS one time, simply run the default command `gulp`. You can also run any of the other task names, like `gulp styles`.
 * To watch the templates, .scss, and .js files for changes, and to automatically compile and minify the relevant files, run the command `gulp live`. If the livereload browser extensions are installed and enabled, the browser will automatically refresh when any changes are made to style and javascript files in the *src* directory, or to any template files in the *templates* directory.
+
+
+## Customize
+
+You can change the title and image that show up in the Growl messages, by editing the `notifyInfo` object values. :)
