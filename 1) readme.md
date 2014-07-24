@@ -15,7 +15,7 @@ I freaking love working with technologies like Grunt and Gulp, and wanted to sha
 
 If a package.json file already exists with list of all of the dependencies that Gulp will need for the project, then you can simply switch to the project root directory in the site terminal and run the command `npm install`. This only needs to happen once so that the dependencies can be downloaded for the project.
 
-If a package.json file does not exist, switch to the project root directory for the site in a terminal. For this configuration, you can install gulp and the needed dependencies using the command `npm install gulp-compass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-rename gulp-livereload tiny-lr gulp-cache --save-dev`. You only need to do this once so that the dependencies can be downloaded for the project.
+If a package.json file does not exist, switch to the project root directory for the site in a terminal. For this configuration, you can install gulp and the needed dependencies using the command `npm install gulp gulp-compass gulp-autoprefixer gulp-minify-css gulp-uglify gulp-rename gulp-concat gulp-notify gulp-livereload gulp-plumber --save-dev`. You only need to do this once so that the dependencies can be downloaded for the project.
 
 
 ## Add the gulp.js file
@@ -42,6 +42,7 @@ Copy the gulp.js file (below) to the base of your site. The provided gulp.js fil
   * templates/ (EE templates)
   * gulpfile.js
   * package.json (will be added when gulp is installed via CLI)
+  * (gulp.png)[https://dl.dropboxusercontent.com/u/12922578/gulp.png]
 
 
 ## Run Gulp
