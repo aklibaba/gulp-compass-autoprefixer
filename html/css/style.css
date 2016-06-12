@@ -55,7 +55,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 body {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #DF4848;
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .test {

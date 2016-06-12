@@ -35,7 +35,8 @@ gulp.task('styles', function() {
 		.pipe(compass({
 			css: 'html/css',
 			sass: 'src/scss',
-			image: 'html/images'
+			image: 'html/images',
+			require: ['susy', 'breakpoint']
 		}))
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 		.pipe(gulp.dest('html/css'))
